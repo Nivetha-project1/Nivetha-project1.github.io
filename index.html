@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nivedha | ECE Portfolio</title>
+    <title>Nivedha | ECE Student</title>
 
     <style>
         * {
@@ -16,456 +16,269 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: #050807;
-            color: #e8f5ee;
+            background: #f5f7fb;
+            color: #222;
             line-height: 1.6;
         }
 
-        /* NAVBAR */
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 18px 7%;
-            background: rgba(5, 8, 7, 0.95);
-            border-bottom: 1px solid #183d2c;
-        }
-
-        .logo {
-            color: #35d98b;
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        nav a {
-            color: #d8e7df;
-            text-decoration: none;
-            margin-left: 25px;
-            font-size: 14px;
-        }
-
-        nav a:hover {
-            color: #35d98b;
-        }
-
-        /* HOME */
-        .hero {
-            min-height: 90vh;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 70px 8%;
-            gap: 50px;
-            background:
-                radial-gradient(circle at 80% 45%, #0b5135 0%, #07140e 22%, #050807 50%);
-        }
-
-        .hero-text {
-            max-width: 600px;
-        }
-
-        .hero-text h1 {
-            font-size: 55px;
-            color: #35d98b;
-            line-height: 1.1;
-            margin-bottom: 20px;
-        }
-
-        .hero-text h2 {
-            font-size: 28px;
+        header {
+            background: #172033;
             color: white;
-            margin-bottom: 18px;
+            text-align: center;
+            padding: 80px 20px;
         }
 
-        .hero-text p {
-            color: #aebdb5;
-            margin-bottom: 12px;
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 22px;
-            background: #20b875;
-            color: #031009;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 6px;
-        }
-
-        .btn:hover {
-            background: #35d98b;
-        }
-
-        /* PROFILE CIRCLE */
-        .profile {
-            width: 280px;
-            height: 280px;
-            border-radius: 50%;
-            border: 3px solid #35d98b;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #0a1912;
-            box-shadow:
-                0 0 25px #168c5a,
-                0 0 70px rgba(32,184,117,0.25);
-            flex-shrink: 0;
-        }
-
-        .profile span {
-            font-size: 90px;
-        }
-
-        /* SECTIONS */
-        section {
-            max-width: 1100px;
-            margin: auto;
-            padding: 80px 7%;
-        }
-
-        .section-title {
-            color: #35d98b;
-            font-size: 32px;
-            margin-bottom: 30px;
-        }
-
-        .about-text {
-            color: #b8c7bf;
-            max-width: 850px;
-        }
-
-        /* SKILLS */
-        .skills {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 18px;
-        }
-
-        .skill-card {
-            background: #0b1210;
-            border: 1px solid #1b4734;
-            padding: 25px;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-5px);
-            border-color: #35d98b;
-            box-shadow: 0 0 20px rgba(53,217,139,0.15);
-        }
-
-        .skill-card h3 {
-            color: #35d98b;
-            margin-bottom: 8px;
-        }
-
-        .skill-card p {
-            color: #aab9b1;
-            font-size: 14px;
-        }
-
-        /* PROJECTS */
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .project {
-            background: #0b1210;
-            border: 1px solid #1b4734;
-            padding: 25px;
-            border-radius: 8px;
-        }
-
-        .project h3 {
-            color: #35d98b;
+        header h1 {
+            font-size: 42px;
             margin-bottom: 10px;
         }
 
-        .project p {
-            color: #aab9b1;
-            font-size: 14px;
+        header p {
+            font-size: 18px;
+            margin: 5px;
         }
 
-        .tag {
-            display: inline-block;
-            margin-top: 15px;
-            margin-right: 5px;
-            padding: 5px 10px;
-            border-radius: 15px;
-            background: #123b29;
-            color: #35d98b;
-            font-size: 12px;
+        nav {
+            background: white;
+            padding: 16px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
-        /* INTERNSHIP */
+        nav a {
+            text-decoration: none;
+            color: #172033;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        section {
+            max-width: 950px;
+            margin: 45px auto;
+            padding: 35px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+        }
+
+        h2 {
+            color: #172033;
+            margin-bottom: 18px;
+            font-size: 28px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills span {
+            background: #e8eefc;
+            padding: 9px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .project,
         .internship {
-            background: #0b1210;
-            border-left: 4px solid #35d98b;
-            padding: 25px;
-            margin-bottom: 20px;
+            background: #f8fafc;
+            padding: 22px;
+            margin-top: 20px;
+            border-left: 4px solid #2563eb;
             border-radius: 6px;
         }
 
+        .project h3,
         .internship h3 {
-            color: #35d98b;
+            margin-bottom: 8px;
+            color: #172033;
         }
 
-        .internship p {
-            color: #aab9b1;
+        .buttons {
+            margin-top: 15px;
         }
 
-        /* CONTACT */
-        .contact-box {
-            background: #0b1210;
-            border: 1px solid #1b4734;
-            padding: 30px;
-            border-radius: 8px;
+        .buttons a {
+            display: inline-block;
+            text-decoration: none;
+            background: #172033;
+            color: white;
+            padding: 9px 16px;
+            margin-right: 8px;
+            border-radius: 6px;
         }
 
-        .contact-box p {
-            margin: 12px 0;
-            color: #b8c7bf;
+        .buttons a:hover {
+            background: #2563eb;
         }
 
-        .contact-box a {
-            color: #35d98b;
+        .contact a {
+            color: #2563eb;
             text-decoration: none;
         }
 
-        /* FOOTER */
         footer {
+            background: #172033;
+            color: white;
             text-align: center;
             padding: 25px;
-            border-top: 1px solid #183d2c;
-            color: #80958b;
-        }
-
-        /* MOBILE */
-        @media (max-width: 768px) {
-
-            nav {
-                padding: 15px 5%;
-            }
-
-            nav a {
-                margin-left: 10px;
-                font-size: 12px;
-            }
-
-            .hero {
-                flex-direction: column-reverse;
-                text-align: center;
-                padding: 60px 7%;
-            }
-
-            .hero-text h1 {
-                font-size: 40px;
-            }
-
-            .hero-text h2 {
-                font-size: 22px;
-            }
-
-            .profile {
-                width: 210px;
-                height: 210px;
-            }
-
-            .profile span {
-                font-size: 65px;
-            }
-
-            .skills {
-                grid-template-columns: 1fr;
-            }
-
-            .projects {
-                grid-template-columns: 1fr;
-            }
-
-            section {
-                padding: 60px 7%;
-            }
+            margin-top: 50px;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <div class="logo">Nivedha</div>
+    <!-- Home -->
+    <header id="home">
+        <h1>Hi, I'm Nivedha</h1>
 
-        <div>
-            <a href="#home">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#internship">Internship</a>
-            <a href="#contact">Contact</a>
-        </div>
+        <p>
+            Final-Year Electronics and Communication Engineering Student
+        </p>
+
+        <p>
+            VLSI | Embedded Systems | Python
+        </p>
+    </header>
+
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#internship">Internship</a>
+        <a href="#contact">Contact</a>
     </nav>
 
 
-    <!-- HOME -->
-    <section class="hero" id="home">
-
-        <div class="hero-text">
-
-            <h1>Electronics &<br>Communication<br>Engineering Student</h1>
-
-            <h2>Embedded Systems | VLSI</h2>
-
-            <p>
-                Building my knowledge in electronics, programming
-                and embedded technologies through practical learning
-                and projects.
-            </p>
-
-            <a href="#contact" class="btn">Let's Connect</a>
-
-        </div>
-
-
-        <div class="profile">
-            <span>👩‍💻</span>
-        </div>
-
-    </section>
-
-
-    <!-- ABOUT -->
+    <!-- About -->
     <section id="about">
 
-        <h2 class="section-title">About Me</h2>
+        <h2>About Me</h2>
 
-        <p class="about-text">
-            I am a final-year Electronics and Communication Engineering
-            student at Vivekanandha College of Technology for Women.
+        <p>
+            I am a final-year Electronics and Communication Engineering student
+            at Vivekanandha College of Technology for Women.
             I am interested in Embedded Systems and VLSI and enjoy
-            learning new technologies step by step.
+            learning new technologies through practical projects and
+            hands-on experience.
+        </p>
+
+        <p style="margin-top: 15px;">
+            I have practical exposure to programming, digital electronics,
+            embedded systems, VLSI design and simulation.
+            I enjoy improving my technical skills step by step.
         </p>
 
     </section>
 
 
-    <!-- SKILLS -->
+    <!-- Skills -->
     <section id="skills">
 
-        <h2 class="section-title">Technical Skills</h2>
+        <h2>Technical Skills</h2>
 
         <div class="skills">
 
-            <div class="skill-card">
-                <h3>Embedded Systems</h3>
-                <p>Arduino, Embedded C and basic microcontroller concepts.</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>VLSI</h3>
-                <p>CMOS concepts, Cadence Virtuoso and basic VLSI design.</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>C / Embedded C</h3>
-                <p>Programming fundamentals, arrays, functions and problem solving.</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Python</h3>
-                <p>Python fundamentals and basic programming.</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Digital Electronics</h3>
-                <p>Digital logic, circuits and basic electronic concepts.</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Tools</h3>
-                <p>Wokwi, GitHub and basic simulation tools.</p>
-            </div>
+            <span>C</span>
+            <span>Embedded C</span>
+            <span>Python</span>
+            <span>Digital Electronics</span>
+            <span>Embedded Systems</span>
+            <span>VLSI</span>
+            <span>Verilog HDL</span>
+            <span>Arduino</span>
+            <span>Wokwi</span>
+            <span>SQL</span>
+            <span>DSA Basics</span>
+            <span>GitHub</span>
 
         </div>
 
     </section>
 
 
-    <!-- PROJECTS -->
+    <!-- Projects -->
     <section id="projects">
 
-        <h2 class="section-title">Projects</h2>
-
-        <div class="projects">
-
-            <div class="project">
-
-                <h3>Seven Segment Display using Arduino</h3>
-
-                <p>
-                    Arduino-based project using a seven segment display
-                    to display numbers from 0 to 9 and understand
-                    digital electronics concepts.
-                </p>
-
-                <span class="tag">Arduino</span>
-                <span class="tag">Digital Electronics</span>
-                <span class="tag">Embedded C</span>
-
-            </div>
+        <h2>Projects</h2>
 
 
-            <div class="project">
+        <!-- Project 1 -->
+        <div class="project">
 
-                <h3>Li-Fi Based Sensor Data Communication</h3>
+            <h3>Seven Segment Display using Arduino</h3>
 
-                <p>
-                    Beginner IoT project using sensor data and
-                    Li-Fi-based communication concepts with Arduino.
-                </p>
+            <p>
+                Arduino-based project using a seven segment display
+                to display numbers from 0 to 9.
+                This project helped me understand digital electronics,
+                LED interfacing and basic embedded programming.
+            </p>
 
-                <span class="tag">Arduino</span>
-                <span class="tag">Li-Fi</span>
-                <span class="tag">Sensors</span>
+            <div class="buttons">
+
+                <a href="https://github.com/Nivetha-project1"
+                   target="_blank">
+                    GitHub
+                </a>
 
             </div>
 
+        </div>
 
-            <div class="project">
 
-                <h3>LoRa Based Smart Agriculture</h3>
+        <!-- Project 2 -->
+        <div class="project">
 
-                <p>
-                    Smart agriculture project using temperature,
-                    humidity, soil moisture and rain sensors with
-                    automatic irrigation and LoRa communication.
-                </p>
+            <h3>Li-Fi Based Sensor Data Communication</h3>
 
-                <span class="tag">LoRa</span>
-                <span class="tag">Arduino</span>
-                <span class="tag">IoT</span>
+            <p>
+                Arduino-based project exploring Li-Fi communication
+                for sensor data transmission using an LED for
+                transmitting the signal and an LDR for receiving it.
+            </p>
+
+            <div class="buttons">
+
+                <a href="https://github.com/Nivetha-project1"
+                   target="_blank">
+                    GitHub
+                </a>
 
             </div>
 
+        </div>
 
-            <div class="project">
 
-                <h3>CMOS Inverter Design</h3>
+        <!-- Project 3 -->
+        <div class="project">
 
-                <p>
-                    CMOS inverter design and simulation using
-                    Cadence Virtuoso with schematic and waveform analysis.
-                </p>
+            <h3>LDR-Based Monitoring Project</h3>
 
-                <span class="tag">VLSI</span>
-                <span class="tag">Cadence</span>
-                <span class="tag">CMOS</span>
+            <p>
+                Sensor-based monitoring project developed using
+                the Wokwi simulator to understand LDR interfacing,
+                sensor readings and basic embedded programming.
+            </p>
+
+            <div class="buttons">
+
+                <a href="https://github.com/Nivetha-project1"
+                   target="_blank">
+                    GitHub
+                </a>
 
             </div>
 
@@ -474,72 +287,43 @@
     </section>
 
 
-    <!-- INTERNSHIP -->
+    <!-- Internship -->
     <section id="internship">
 
-        <h2 class="section-title">Internship</h2>
+        <h2>Internship</h2>
 
+
+        <!-- VLSI Internship -->
         <div class="internship">
 
             <h3>VLSI Internship</h3>
 
             <p>
-                Ematix Embedded and Software Solutions
+                <strong>Ematix Embedded and Software Solutions</strong>
             </p>
 
-            <p>
-                Gained practical exposure to VLSI design,
-                Cadence Virtuoso, schematic design, simulation,
-                waveform analysis and verification concepts.
+            <p style="margin-top: 10px;">
+                Completed a 20-day VLSI internship with practical exposure
+                to Cadence Virtuoso, schematic design, simulation,
+                waveform analysis and basic verification concepts.
             </p>
 
         </div>
 
 
+        <!-- Embedded Internship -->
         <div class="internship">
 
             <h3>Embedded Systems Internship</h3>
 
             <p>
-                3-Month Embedded Systems Internship
+                <strong>3-Month Internship</strong>
             </p>
 
-            <p>
-                Worked with Arduino, Embedded C, digital electronics
-                and practical embedded system projects.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT -->
-    <section id="contact">
-
-        <h2 class="section-title">Let's Connect</h2>
-
-        <div class="contact-box">
-
-            <p>
-                📧 Email:
-                <a href="mailto:nivedha776@gmail.com">
-                    nivedha776@gmail.com
-                </a>
-            </p>
-
-            <p>
-                💻 GitHub:
-                <a href="https://github.com/Nivetha-project1" target="_blank">
-                    Nivetha-project1
-                </a>
-            </p>
-
-            <p>
-                🔗 LinkedIn:
-                <a href="#" target="_blank">
-                    Add your LinkedIn
-                </a>
+            <p style="margin-top: 10px;">
+                Gained practical experience with Arduino, Embedded C,
+                digital electronics, hardware interfacing and
+                embedded system projects.
             </p>
 
         </div>
@@ -547,9 +331,44 @@
     </section>
 
 
-    <!-- FOOTER -->
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <h2>Let's Connect</h2>
+
+        <p>
+            Email:
+            <a href="mailto:nivedha776@gmail.com">
+                nivedha776@gmail.com
+            </a>
+        </p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/Nivetha-project1"
+               target="_blank">
+                Nivetha-project1
+            </a>
+        </p>
+
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/nivedha-s-a-aa4730376"
+               target="_blank">
+                Nivedha S. A.
+            </a>
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
     <footer>
-        <p>© 2026 Nivedha | ECE | Embedded Systems | VLSI</p>
+
+        <p>
+            © 2026 Nivedha | Electronics & Communication Engineering
+        </p>
+
     </footer>
 
 </body>
